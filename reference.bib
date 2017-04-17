@@ -1,0 +1,164 @@
+@article{Arora2016Stochastic,
+  title={Stochastic Optimization for Multiview Representation Learning using Partial Least Squares},
+  author={Arora, Raman and Mianjy, Poorya and Marinov, Teodor},
+  year={2016},
+ abstract={Partial Least Squares (PLS) is a ubiquitous statistical technique for bilinear factor analysis. It is used in many data analysis, machine learning, and information retrieval applications to model the covariance structure between a pair of data matrices. In this paper, we consider PLS for representation learning in a multiview setting where we have more than one view in data at training time. Furthermore, instead of framing PLS as a problem about a fixed given data set, we argue that PLS should be studied as a stochastic optimization problem, especially in a “big data” setting, with the goal of optimizing a population objective based on sample. This view suggests using Stochastic Approximation (SA) approaches, such as Stochastic Gradient Descent (SGD) and enables a rigorous analysis of their benefits. In this paper, we develop SA approaches to PLS and provide iteration complexity bounds for the proposed algorithms.},
+}
+
+@article{Bhojanapalli2014Tighter,
+  title={Tighter Low-rank Approximation via Sampling the Leveraged Element},
+  author={Bhojanapalli, Srinadh and Jain, Prateek and Sanghavi, Sujay},
+  journal={Eprint Arxiv},
+  year={2014},
+ keywords={Computer Science - Data Structures and Algorithms;Computer Science - Learning;Statistics - Machine Learning},
+ abstract={In this work, we propose a new randomized algorithm for computing a low-rank approximation to a given matrix. Taking an approach different from existing literature, our method first involves a specific biased sampling, with an element being chosen based on the leverage scores of its row and column, and then involves weighted alternating minimization over the factored form of the intended low-rank matrix, to minimize error only on these samples. Our method can leverage input sparsity, yet produce approximations in {\em spectral} (as opposed to the weaker Frobenius) norm; this combines the best aspects of otherwise disparate current results, but with a dependence on the condition number $\kappa = \sigma_1/\sigma_r$. In particular we require $O(nnz(M) + \frac{n\kappa^2 r^5}{\epsilon^2})$ computations to generate a rank-$r$ approximation to $M$ in spectral norm. In contrast, the best existing method requires $O(nnz(M)+ \frac{nr^2}{\epsilon^4})$ time to compute an approximation in Frobenius norm. Besides the tightness in spectral norm, we have a better dependence on the error $\epsilon$. Our method is naturally and highly parallelizable. Our new approach enables two extensions that are interesting on their own. The first is a new method to directly compute a low-rank approximation (in efficient factored form) to the product of two given matrices; it computes a small random set of entries of the product, and then executes weighted alternating minimization (as before) on these. The sampling strategy is different because now we cannot access leverage scores of the product matrix (but instead have to work with input matrices). The second extension is an improved algorithm with smaller communication complexity for the distributed PCA setting (where each server has small set of rows of the matrix, and want to compute low rank approximation with small amount of communication with other servers).},
+}
+
+@article{Shamir2015Fast,
+  title={Fast Stochastic Algorithms for SVD and PCA: Convergence Properties and Convexity},
+  author={Shamir, Ohad},
+  journal={Mathematics},
+  year={2015},
+ abstract={We study the convergence properties of the VR-PCA algorithm introduced by \cite{shamir2015stochastic} for fast computation of leading singular vectors. We prove several new results, including a formal analysis of a block version of the algorithm, and convergence from random initialization. We also make a few observations of independent interest, such as how pre-initializing with just a single exact power iteration can significantly improve the runtime of stochastic methods, and what are the convexity and non-convexity properties of the underlying optimization problem.},
+}
+
+@inproceedings{Arora2014Stochastic,
+  title={Stochastic Optimization for PCA and PLS},
+  author={Arora, R and Cotter, A and Livescu, K and Srebro, N},
+  booktitle={Allerton},
+  pages={861-868},
+  year={2014},
+ keywords={least squares approximations;optimisation;principal component analysis;stochastic processes;CCA;PCA;PLS;SA;stochastic approximation methods;stochastic optimization problems},
+ abstract={ABSTRACT  We study PCA, PLS, and CCA as stochastic opti-mization problems, of optimizing a population objective based on a sample. We suggest several stochastic approximation (SA) methods for PCA and PLS, and investigate their empirical performance.},
+}
+
+@article{Shamir2015A,
+  title={A Stochastic PCA and SVD Algorithm with an Exponential Convergence Rate},
+  author={Shamir, Ohad},
+  journal={Mathematics},
+  year={2015},
+ abstract={We describe and analyze a simple algorithm for principal component analysis and singular value decomposition, VR-PCA, which uses computationally cheap stochastic iterations, yet converges exponentially fast to the optimal solution. In contrast, existing algorithms suffer either from slow convergence, or computationally intensive iterations whose runtime scales with the data size. The algorithm builds on a recent variance-reduced stochastic gradient technique, which was previously analyzed for strongly convex optimization, whereas here we apply it to an inherently non-convex problem, using a very different analysis.},
+}
+
+@article{Musco2015Randomized,
+  title={Randomized Block Krylov Methods for Stronger and Faster Approximate Singular Value Decomposition},
+  author={Musco, Cameron and Musco, Christopher},
+  journal={Computer Science},
+  year={2015},
+ abstract={Since being analyzed by Rokhlin, Szlam, and Tygert and popularized by Halko, Martinsson, and Tropp, randomized Simultaneous Power Iteration has become the method of choice for approximate singular value decomposition. It is more accurate than simpler sketching algorithms, yet still converges quickly for any matrix, independently of singular value gaps. After $\tilde{O}(1/\epsilon)$ iterations, it gives a low-rank approximation within $(1+\epsilon)$ of optimal for spectral norm error. We give the first provable runtime improvement on Simultaneous Iteration: a simple randomized block Krylov method, closely related to the classic Block Lanczos algorithm, gives the same guarantees in just $\tilde{O}(1/\sqrt{\epsilon})$ iterations and performs substantially better experimentally. Despite their long history, our analysis is the first of a Krylov subspace method that does not depend on singular value gaps, which are unreliable in practice. Furthermore, while it is a simple accuracy benchmark, even $(1+\epsilon)$ error for spectral norm low-rank approximation does not imply that an algorithm returns high quality principal components, a major issue for data applications. We address this problem for the first time by showing that both Block Krylov Iteration and a minor modification of Simultaneous Iteration give nearly optimal PCA for any matrix. This result further justifies their strength over non-iterative sketching methods. Finally, we give insight beyond the worst case, justifying why both algorithms can run much faster in practice than predicted. We clarify how simple techniques can take advantage of common matrix properties to significantly improve runtime.},
+}
+
+@article{Arora2013Stochastic,
+  title={Stochastic Optimization of PCA with Capped MSG},
+  author={Arora, Raman and Cotter, Andrew and Srebro, Nathan},
+  journal={Advances in Neural Information Processing Systems},
+  pages={1815-1823},
+  year={2013},
+ keywords={Statistics - Machine Learning;Computer Science - Learning},
+ abstract={We study PCA as a stochastic optimization problem and propose a novel stochastic approximation algorithm which we refer to as "Matrix Stochastic Gradient" (MSG), as well as a practical variant, Capped MSG. We study the method both theoretically and empirically.},
+}
+
+@article{IEEE2013Accelerating,
+  title={Accelerating Stochastic Gradient Descent using Predictive Variance Reduction},
+  author={IEEE},
+  journal={Advances in Neural Information Processing Systems},
+  pages={315-323},
+  year={2013},
+ abstract={Stochastic gradient descent is popular for large scale optimization but has slow convergence asymptotically due to the inherent variance. To remedy this problem, we introduce an explicit variance reduction method for stochastic gradient descent which we call stochastic variance reduced gradient (SVRG). For smooth and strongly convex functions, we prove that this method enjoys the same fast convergence rate as those of stochastic dual coordinate ascent (SDCA) and Stochastic Average Gradient (SAG). However, our analysis is significantly simpler and more intuitive. Moreover, unlike SDCA or SAG, our method does not require the storage of gradients, and thus is more easily applicable to complex problems such as some structured prediction problems and neural network learning. 1},
+}
+
+@article{Defazio2014SAGA,
+  title={SAGA: A Fast Incremental Gradient Method With Support for Non-Strongly Convex Composite Objectives},
+  author={Defazio, Aaron and Bach, Francis and Lacostejulien, Simon},
+  journal={Advances in Neural Information Processing Systems},
+  volume={2},
+  pages={1646-1654},
+  year={2014},
+ keywords={Computer Science - Learning;Mathematics - Optimization and Control;Statistics - Machine Learning},
+ abstract={In this work we introduce a new optimisation method called SAGA in the spirit of SAG, SDCA, MISO and SVRG, a set of recently proposed incremental gradient algorithms with fast linear convergence rates. SAGA improves on the theory behind SAG and SVRG, with better theoretical convergence rates, and has support for composite objectives where a proximal operator is used on the regulariser. Unlike SDCA, SAGA supports non-strongly convex problems directly, and is adaptive to any inherent strong convexity of the problem. We give experimental results showing the effectiveness of our method.},
+}
+
+@article{Halko2010Finding,
+  title={Finding structure with randomness: Probabilistic algorithms for constructing approximate matrix decompositions},
+  author={Halko, N and Martinsson, P. G and Tropp, J. A},
+  journal={Siam Review},
+  volume={53},
+  number={2},
+  pages={217-288},
+  year={2010},
+ keywords={Johnson-Lindenstrauss lemma;dimension reduction;eigenvalue decomposition;interpolative decomposition;matrix approximation;parallel algorithm;pass-efficient algorithm;principal component analysis;random matrix;randomized algorithm},
+ abstract={Low-rank matrix approximations, such as the truncated singular value decomposition and the rank-revealing QR decomposition, play a central role in data analysis and scientific computing. This work surveys and extends recent research which demonstrates that randomization offers a powerful tool for performing low-rank matrix approximation. These techniques exploit modern computational architectures more fully than classical methods and open the possibility of dealing with truly massive data sets. This paper presents a modular framework for constructing randomized algorithms that compute partial matrix decompositions. These methods use random sampling to identify a subspace that captures most of the action of a matrix. The input matrix is then compressed---either explicitly or implicitly---to this subspace, and the reduced matrix is manipulated deterministically to obtain the desired low-rank factorization. In many cases, this approach beats its classical competitors in terms of accuracy, speed, and robustness. These claims are supported by extensive numerical experiments and a detailed error analysis.},
+}
+
+@article{Oja1982Simplified,
+  title={Simplified neuron model as a principal component analyzer},
+  author={Oja, Erkki},
+  journal={Journal of Mathematical Biology},
+  volume={15},
+  number={3},
+  pages={267-273},
+  year={1982},
+ keywords={Neuron models;Synaptic plasticity;Stochastic approximation},
+ abstract={A simple linear neuron model with constrained Hebbian-type synaptic modification is analyzed and a new class of unconstrained learning rules is derived. It is shown that the model neuron tends to extract the principal component from a stationary input vector sequence.},
+}
+
+@article{Durell1990Factor,
+  title={Factor analysis of the near-ultraviolet absorption spectrum of plastocyanin using bilinear, trilinear, and quadrilinear models.},
+  author={Durell, S. R. and Lee, C. H. and Ross, R. T. and Gross, E. L.},
+  journal={Archives of Biochemistry & Biophysics},
+  volume={278},
+  number={1},
+  pages={148-60},
+  year={1990},
+ keywords={CHLOROPLAST AND NUCLEAR DNA;RESTRICTION;ABSENCE OF N-6-METHYLADENINE;LEGUMINOUS PLANTS},
+ abstract={Factor analysis was used to resolve the spectral components in the near-uv absorption spectrum of plastocyanin. The data set was absorption as a function of four variables: wavelength, species of plastocyanin, oxidation state of the copper center, and environmental pH. The data were fit with the traditional bilinear model, as well as with trilinear and quadrilinear models. Trilinear and quadrilinear models have the advantage that they uniquely define the components, avoiding the indeterminacy of bilinear models. Bilinear analysis using the absorption spectra of tyrosine and copper metallothionein as targets resulted in a two-component solution which was nearly identical to that obtained using trilinear and quadrilinear models, for which no targets are required. The two-component models separate the absorption into tyrosine and copper center components. The absorption of tyrosine is found to be pH dependent in reduced plastocyanin, and the absorption magnitude of the reduced copper center is the same in the four different plastocyanin species. Further resolution is provided by a three-component quadrilinear model. The results indicate that there are at least two different electronic transitions which cause the absorption of the reduced copper center and that one of them couples to a tyrosine residue. It is the absorption of this coupled tyrosine residue which is pH dependent. Correlation of the results with previous studies indicates that it is Tyr 83 which is the perturbed residue. The separation of the absorption of the copper center and Tyr 83 provides spectroscopic probes for the conformations of the north pole and east face reaction sites on the plastocyanin protein.},
+}
+
+@article{Sanger1989Optimal,
+  title={Optimal unsupervised learning in a single-layer linear feedforward neural network},
+  author={Sanger, Terence D.},
+  volume={2},
+  number={6},
+  pages={459-473},
+  year={1989},
+ keywords={Neural network;Unsupervised learning;Hebbian learning;Feedforward;Karhunen-Loeve Transform;Image coding;Texture;Cortical receptive fields},
+ abstract={Abstract A new approach to unsupervised learning in a single-layer linear feedforward neural network is discussed. An optimality principle is proposed which is based upon preserving maximal information in the output units. An algorithm for unsupervised learning based upon a Hebbian learning rule, which achieves the desired optimality is presented. The algorithm finds the eigenvectors of the input correlation matrix, and it is proven to converge with probability one. An implementation which can train neural networks using only local “synaptic” modification rules is described. It is shown that the algorithm is closely related to algorithms in statistics (Factor Analysis and Principal Components Analysis) and neural networks (Self-supervised Backpropagation, or the “encoder” problem). It thus provides an explanation of certain neural network behavior in terms of classical statistical techniques. Examples of the use of a linear network for solving image coding and texture segmentation problems are presented. Also, it is shown that the algorithm can be used to find “visual receptive fields” which are qualitatively similar to those found in primate retina and visual cortex.},
+}
+
+@book{Stockman2001Computer,
+  title={Computer vision},
+  author={Stockman and George, C},
+  publisher={Prentice Hall,},
+  pages={vii–viii},
+  year={2001},
+ keywords={Computer vision},
+ abstract={From the Publisher: Computer Vision presents the necessary theory and techniques for students and practitioners who will work in fields where significant information must be extracted automatically from images. It will be a useful resource automatically from images. It will be a useful resource book for professionals and a core text for both undergraduate and beginning graduate computer vision and imaging courses.  Features    Topics include image databases an virtual and augmented reality in addition to classical topics.  Offers a complete view of two real-world systems that use computer vision.  Contains applications from industry, medicine, land use, multimedia, and computer graphics.  Includes over 250 exercises and programming projects, 48 separately defined algorithms, and 360 figures.  The companion website features include image archive, sample},
+}
+
+@article{Salton2003Information,
+  title={Information retrieval},
+  author={Salton, Gerard and Harman, Donna},
+  pages={777},
+  year={2003},
+ keywords={Information retrieval;Optical disk&#x2010;based;On&#x2010;line search aids;Document image;Networks;Copyrights;Budgeting;On&#x2010;line databases;Search services;Search methods},
+ abstract={Please note that the content of this book primarily consists of articles available from Wikipedia or other free sources online.Information retrieval (IR) is the science of searching for documents, for information within documents and for metadata about documents, as well as that of searching relational databases and the World Wide Web. There is overlap in the usage of the terms data retrieval, document retrieval, information retrieval, and text retrieval, but each also has its own body of literature, theory, praxis and technologies. IR is interdisciplinary, based on computer science, mathematics, library science, information science, information architecture, cognitive psychology, linguistics, statistics and physics.Automated information retrieval systems are used to reduce what has been called "information overload". Many universities and public libraries use IR systems to provide access to books, journals and other documents. Web search engines are the most visible IR applications.},
+}
+
+@book{Chiang2001Partial,
+  title={Partial Least Squares},
+  author={Chiang, Leo H. and Russell, Evan L. and Braatz, Richard D.},
+  publisher={Springer London},
+  pages={559–585},
+  year={2001},
+ keywords={orthogonal least squares algorithm;regularization;regression;Bayesian learning;relevance vector machines;evidence procedure},
+ abstract={Partial least squares  (PLS), also known as projection to latent structures , is a dimensionality reduction technique for maximizing the covariance between the predictor (independent) matrix X  and the predicted (dependent) matrix Y  for each component of the reduced space [98, 350]. A popular application of PLS is to select the matrix Y  to contain only product quality data which can even include off-line measurement data, and the matrix X  to contain all other process variables [207]. Such inferential models (also known as soft sensors) can be used for the on-line prediction of the product quality data [215, 222, 223], for incorporation into process control algorithms [158, 259, 260], as well as for process monitoring [207, 259, 260]. Discriminant PLS selects the matrix X  to contain all process variables and selects the Y  matrix to focus PLS on the task of fault diagnosis [46].},
+}
+
+@article{Feng2011HOGWILD,
+  title={HOGWILD!: A Lock-Free Approach to Parallelizing Stochastic Gradient Descent},
+  author={Feng, Niu and Recht, Benjamin and Re, Christopher and Wright, Stephen J.},
+  journal={Advances in Neural Information Processing Systems},
+  volume={24},
+  pages={693-701},
+  year={2011},
+}
