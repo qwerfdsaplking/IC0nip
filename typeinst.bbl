@@ -60,11 +60,10 @@ Raman Arora, Andrew Cotter, and Nathan Srebro.
 \newblock {\em Advances in Neural Information Processing Systems}, pages
   1815--1823, 2013.
 
-\bibitem{Shamir2015Fast}
-Ohad Shamir.
-\newblock Fast stochastic algorithms for svd and pca: Convergence properties
-  and convexity.
-\newblock {\em Mathematics}, 2015.
+\bibitem{Schmidt2013Minimizing}
+Mark Schmidt, Nicholas~Le Roux, and Francis Bach.
+\newblock Minimizing finite sums with the stochastic average gradient.
+\newblock {\em Mathematical Programming}, 26(5):1--30, 2013.
 
 \bibitem{IEEE2013Accelerating}
 IEEE.
@@ -80,17 +79,17 @@ Aaron Defazio, Francis Bach, and Simon Lacostejulien.
 \newblock {\em Advances in Neural Information Processing Systems},
   2:1646--1654, 2014.
 
-\bibitem{Shamir2015A}
-Ohad Shamir.
-\newblock A stochastic pca and svd algorithm with an exponential convergence
-  rate.
-\newblock {\em Mathematics}, 2015.
-
 \bibitem{Feng2011HOGWILD}
 Niu Feng, Benjamin Recht, Christopher Re, and Stephen~J. Wright.
 \newblock Hogwild!: A lock-free approach to parallelizing stochastic gradient
   descent.
 \newblock {\em Advances in Neural Information Processing Systems}, 24:693--701,
   2011.
+
+\bibitem{Shamir2015A}
+Ohad Shamir.
+\newblock A stochastic pca and svd algorithm with an exponential convergence
+  rate.
+\newblock {\em Mathematics}, 2015.
 
 \end{thebibliography}
